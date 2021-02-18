@@ -1,0 +1,46 @@
+
+*:focus {
+  outline: 0;
+}
+img{
+	flex-grow: 1;
+	width: 25%;
+	height: 100%;
+  margin: 10px;
+}
+
+.imageContainer{
+	display: flex;
+	flex-wrap: wrap;
+  width: 100%;
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+}
+
+.card{    
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  background-color:rgba(0, 0, 139, 0.6);
+  padding: 5%;
+}
+
+.card > *{
+  padding: 10px;
+}
+
+.sol{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.sol > p{
+  color: white;
+}
+
+.loadMoreButtonContainer{
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+}
