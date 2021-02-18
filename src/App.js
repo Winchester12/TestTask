@@ -42,7 +42,7 @@ export default function App() {
   const [showedImages, setShowedImages] = useState([]);
   const [loadMoreButtonClickCounter, setLoadMoreButtonClickCounter] = useState(3);
 
-  const getData = () => {
+  const getData = async () => {
     console.log(
       `https://api.nasa.gov/mars-photos/api/v1/rovers/${dataFromSelected[0]}/photos?sol=${dataFromSelected[2]}&camera=${dataFromSelected[1]}`
     );
@@ -68,6 +68,8 @@ export default function App() {
       });
   };
 
+  // When this Promise resolves, both values will be available.
+  
   // useEffect(()=>{
   //   getData();
   // },[]);
